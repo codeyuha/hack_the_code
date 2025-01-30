@@ -2,8 +2,8 @@ site_name: Hack The Code
 site_author: Open WEB
 theme:
   name: material
-  favicon: 
-  logo:
+  favicon: https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Security_Approved.png
+  logo: https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Security_Approved.png
   font:
     text: Roboto
   palette:
@@ -31,21 +31,32 @@ theme:
     - navigation.top
     - navigation.footer
 repo_name: learn-cpp
-# repo_url: # 
-copyright: Copyright &copy; 2025 Coding 
+# repo_url: #
+copyright: Copyright &copy; 2022 Coding Armadillo
 nav:
   - Home: index.md
+  - Installation Databases:
+      - MySQL: db.py
+      - PostgreSQL: psql.py
+  - Query Databases:
+      - MySQL: m.py
+      - PostgreSQL: p.py
+  - Conditionals: hello.md
+  - Attacks:
+      - Network attacks: n.py
+      - Web attacks: w.py
+  - Python: py.md
 
 plugins:
   - search
-  - tags
+  #- tags
   - minify:
       minify_html: true
   - git-revision-date-localized:
       type: timeago
       enable_creation_date: true
-  - glightbox:
-      auto_caption: true
+#  - glightbox:
+#      auto_caption: true
 markdown_extensions:
   - admonition
   - attr_list
@@ -60,8 +71,8 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/solid/house
-      # link: # 
+      # link: #
     - icon: fontawesome/brands/github
-      # link: # 
+      # link: #
     - icon: fontawesome/solid/paper-plane
-      # link: # 
+      # link: #
