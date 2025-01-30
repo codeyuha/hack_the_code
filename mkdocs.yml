@@ -1,0 +1,67 @@
+site_name: Hack The Code
+site_author: Open WEB
+theme:
+  name: material
+  favicon: 
+  logo:
+  font:
+    text: Roboto
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  features:
+    - header.autohide
+    - content.code.copy
+    - navigation.top
+    - navigation.footer
+repo_name: learn-cpp
+# repo_url: # 
+copyright: Copyright &copy; 2025 Coding 
+nav:
+  - Home: index.md
+
+plugins:
+  - search
+  - tags
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: timeago
+      enable_creation_date: true
+  - glightbox:
+      auto_caption: true
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji
+extra:
+  social:
+    - icon: fontawesome/solid/house
+      # link: # 
+    - icon: fontawesome/brands/github
+      # link: # 
+    - icon: fontawesome/solid/paper-plane
+      # link: # 
