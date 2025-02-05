@@ -3,10 +3,8 @@ site_url: https://codeyuha.github.io/hack_the_code/
 site_author: Open WEB
 theme:
   name: material
-  favicon: 
-  logo:
-  font:
-    text: Roboto
+  favicon: https://cdn0.iconfinder.com/data/icons/jam-vol-2/18/code-sample-1024.png
+  logo: https://cdn0.iconfinder.com/data/icons/jam-vol-2/18/code-sample-1024.png
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -14,15 +12,15 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: grey
+      accent: green
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: cyan
-      accent: cyan
+      primary: black
+      accent: neon green
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
@@ -31,22 +29,29 @@ theme:
     - content.code.copy
     - navigation.top
     - navigation.footer
-repo_name: learn-cpp
-# repo_url: # 
-copyright: Copyright &copy; 2025 Coding 
+  toc:
+    depth: 2
+
+repo_name: hack-the-code
+copyright: Copyright &copy; 2025 Open WEB
+
 nav:
   - Home: index.md
+  - Learning:
+      - Basics: learning/basics/basics.md
+      - Advanced Topics: learning/advanced/advanced.md
+      - Tools: learning/tools/tools.md
+  - About: about.md
+  - Sign in/Sign up: login.md
 
 plugins:
   - search
-  - tags
   - minify:
       minify_html: true
   - git-revision-date-localized:
       type: timeago
       enable_creation_date: true
-  - glightbox:
-      auto_caption: true
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -58,11 +63,11 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - pymdownx.emoji
+
 extra:
   social:
     - icon: fontawesome/solid/house
-      # link: # 
     - icon: fontawesome/brands/github
-      # link: # 
     - icon: fontawesome/solid/paper-plane
-      # link: # 
+extra_css:
+  - static/extra.css
