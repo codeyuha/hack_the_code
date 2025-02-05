@@ -4,8 +4,6 @@ theme:
   name: material
   favicon: https://cdn0.iconfinder.com/data/icons/jam-vol-2/18/code-sample-1024.png
   logo: https://cdn0.iconfinder.com/data/icons/jam-vol-2/18/code-sample-1024.png
-  font:
-    text: Roboto Mono
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -33,34 +31,26 @@ theme:
   toc:
     depth: 2
 
+repo_name: hack-the-code
+copyright: Copyright &copy; 2025 Open WEB
 
-repo_name: learn-cpp
-# repo_url: #
-copyright: Copyright &copy; 2025 Coding
 nav:
   - Home: index.md
-  - Installation Databases:
-      - MySQL: db.py
-      - PostgreSQL: psql.py
-  - Query Databases:
-      - MySQL: m.py
-      - PostgreSQL: p.py
-  - Conditionals: hello.md
-  - Attacks:
-      - Network attacks: n.py
-      - Web attacks: w.py
-  - Python: py.md
+  - Learning:
+      - Basics: learning/basics/basics.md
+      - Advanced Topics: learning/advanced/advanced.md
+      - Tools: learning/tools/tools.md
+  - About: about.md
+  - Sign in/Sign up: login.md
 
 plugins:
   - search
-  #- tags
   - minify:
       minify_html: true
   - git-revision-date-localized:
       type: timeago
       enable_creation_date: true
-#  - glightbox:
-#      auto_caption: true
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -72,13 +62,11 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - pymdownx.emoji
+
 extra:
   social:
     - icon: fontawesome/solid/house
-      # link: #
     - icon: fontawesome/brands/github
-      # link: #
     - icon: fontawesome/solid/paper-plane
-      # link: #
 extra_css:
-  - extra.css
+  - static/extra.css
